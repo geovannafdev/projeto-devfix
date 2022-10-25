@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@keyframes animation-arrow{
+  0%, 100%{
+    transform: translateY(-30px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animation-gallery{
+  0%{
+    opacity: 1;
+  }
+  21%{
+    opacity: 1;
+  }
+  25%{
+    opacity: 0;
+  }
+  96%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+body{
+  background-color: #000;
+}
+header{
+  background: url(../img/background-header.png) no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.btn-login{
+  display: flex;
+  align-items: center;
+}
+.btn-login a{
+  background: #CF0638;
+  border-radius: 30px;
+  padding: 10px 15px;
+  color: #f1f1f1;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.btn-login a:hover{
+  background-color: black;
+  transition: 0.8s ease-in-out;
+  transform: scale(1.1);
+}
+
+#header-up{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+#headline-header{
+  font-family: 'Lato';
+  color: #f1f1f1;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px;
+  line-height: 100px;
+  text-transform: uppercase;
+  margin: 10.5vh 0;
+}
+#arrow-down{
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  animation-name: animation-arrow 1s ease 0s infinite normal forwards;
+}
+#arrow-down img{
+  width: 70px;
+  animation: animation-arrow 1.5s ease 0s infinite;
+}
+
+#animationGallery-container{
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#animationGallery-container .bgImg{
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+  animation-name: animation-gallery;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 24s;
+  background-size: cover;
+  border-radius: 35px;
+
+}
+#animationGallery-container .bgImg:nth-of-type(1){
+  animation-delay: 18s;
+  background-image: url(../img/tokyo-revengers.png);
+}
+#animationGallery-container .bgImg:nth-of-type(2){
+  animation-delay: 12s;
+  background-image: url(../img/your-name.png);
+}
+#animationGallery-container .bgImg:nth-of-type(3){
+  animation-delay: 6s;
+  background-image: url(../img/demon-slayer.png);
+}
+#animationGallery-container .bgImg:nth-of-type(4){
+  animation-delay: 0s;
+  background-image: url(../img/boku-no-hero.png);
+}
+#animation-gallery:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f1f1f1;
+}
+.item-list-question{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.item-list-question img{
+  width: 20px;
+  height: 20px;
+}
+.item-list-question h2{
+  color: #CF0638;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.itemlist-container{
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.item-list{
+  width: 400px;
+  height: 150px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.item-list li{
+  color: #CF0638;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20 20 20 50px
+}
+.item-list p{
+  font-size: 15px;
+  text-align: justify;
+  padding: 0 15px 15px;
+}
+.item-list:hover{
+  transform: scale(1.1);
+}
+
+.registro-container{
+  background: #CF0638;
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+.img-list{
+  width: 20px;
+}
+form{
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  color: #CF0638;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input::placeholder{
+  color: #CF0638;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align:left;
+}
+
+input#btn-input{
+  background-color: #000;
+  color: #f1f1f1;
+  cursor: pointer;
+
+}
+input#btn-input:hover{
+  transition: 1s ;
+  color: #CF0638;
+}
+
+
+.navbar-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+  padding: 0px 45px;
+}
+.navbar-container ul li{
+  display: inline-flex;
+  padding: 10px; 
+}
+
+.ancora-nav{
+ color: #959595;
+  text-transform: uppercase;
+  font-weight: 800; 
+}
+.ancora-nav:hover{
+  transition: ease-in-out 0.8s;
+  padding: 15px;
+  border-radius: 10px;
+  color: #CF0638;
+  transform: scale(1.1);
+}
+.img-logo:hover{
+  transition: 1s;
+  background: #CF0638;
+  border-radius: 10px;
+}
